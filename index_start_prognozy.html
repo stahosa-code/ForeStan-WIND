@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moje prognozy wiatru</title>
+<style>
+:root{
+  --blue1:#084d84;
+  --blue2:#1769aa;
+  --bg:#edf2f6;
+  --card:#ffffff;
+  --text:#17202a;
+  --muted:#667482;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(180deg,#eaf2f8 0%,var(--bg) 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  color:var(--text);
+}
+header{
+  background:linear-gradient(135deg,var(--blue1),var(--blue2));
+  color:#fff;
+  padding:28px 16px;
+  box-shadow:0 2px 12px rgba(0,0,0,.16);
+}
+.header-inner{
+  max-width:760px;
+  margin:auto;
+  text-align:center;
+}
+h1{
+  margin:0;
+  font-size:30px;
+}
+header p{
+  margin:8px 0 0;
+  opacity:.92;
+}
+main{
+  max-width:760px;
+  margin:auto;
+  padding:22px 14px 32px;
+}
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:16px;
+  box-shadow:0 3px 14px rgba(0,0,0,.09);
+}
+.card h2{
+  margin:0 0 7px;
+  font-size:24px;
+}
+.card p{
+  margin:0 0 16px;
+  color:var(--muted);
+  line-height:1.45;
+}
+.button{
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  padding:16px 18px;
+  border-radius:14px;
+  font-size:19px;
+  font-weight:800;
+  color:#fff;
+  background:linear-gradient(135deg,var(--blue1),var(--blue2));
+  box-shadow:0 2px 8px rgba(0,0,0,.13);
+}
+.button:active{
+  transform:translateY(1px);
+}
+.small{
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  margin-top:10px;
+}
+@media(max-width:600px){
+  h1{font-size:26px}
+  main{padding:14px 9px 24px}
+  .card{padding:15px}
+  .card h2{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>🌬️ Moje prognozy wiatru</h1>
+    <p>Jastarnia i Jezioro Czorsztyńskie</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>🌊 Jastarnia</h2>
+    <p>ICON-D2 RUC + ICON-D2 · Zatoka Pucka</p>
+    <a class="button" href="https://stahosa-code.github.io/Jastarnia-icon-ruc/">
+      Otwórz prognozę Jastarnia
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>🏔️ Czorsztyn</h2>
+    <p>WRF 1,5 km · Jezioro Czorsztyńskie, wysokość Maniów</p>
+    <a class="button" href="https://stahosa-code.github.io/Czorsztyn-wrf/">
+      Otwórz prognozę Czorsztyn
+    </a>
+  </div>
+
+  <div class="small">
+    Strona startowa do szybkiego wyboru prognozy
+  </div>
+
+</main>
+</body>
+</html>
